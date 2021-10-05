@@ -19,3 +19,12 @@ create a new file 'requirements.txt' and do:
 ```
 pip install -r requirements.txt
 ```
+### Deploying Cloud Functions
+First, we have to set our project ID with the following command:
+```
+gcloud config set project [YOU_PROJECT_ID]
+```
+Then we deploy our function with command:
+```
+gcloud functions deploy [FUNCTION_NAME] --runtime python37 --trigger-http
+```
