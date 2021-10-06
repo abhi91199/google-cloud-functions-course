@@ -2,3 +2,4 @@
 venv/
 .gcloudignore
 env.bat
+__pycache__/
