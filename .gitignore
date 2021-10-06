@@ -3,3 +3,4 @@ venv/
 .gcloudignore
 env.bat
 __pycache__/
+google-credentials.json
