@@ -28,3 +28,16 @@ Then we deploy our function with command:
 ```
 gcloud functions deploy [FUNCTION_NAME] --runtime python37 --trigger-http
 ```
+## Schedule Cloud Functions
+We execute the following commands:
+```
+gcloud components install beta
+gcloud components update
+gcloud pubsub topics create [TOPIC_NAME]
+gcloud pubsub subscriptions create cron-sub --topic [TOPIC_NAME]
+```
+## Deleting Cloud Functions
+To delete a Cloud Function run the following command:
+```
+gcloud functions delete [FUNCTION_NAME]
+```
